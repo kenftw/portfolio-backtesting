@@ -1,0 +1,25 @@
+There are 2 separate scripts that run backtesting on 2 basket of stocks. 
+
+
+Basket#1 dubbed the "Green" portfolio and is comprised of stocks of renewable energy producing firms (solar, wind, tidal, bio, etc)
+
+Basket#2 is dubbed the "Black" portfolio and is comprised of more traditional energy producing stocks (coal, oil, natural gas, etc)
+
+
+The scripts cvarBackTestEnergy.m and cvarBackTesGreenEnergy.m are almost exactly the same, the only difference is that they read in different historical data: hence the two xlsx files.
+cvarhist.m is just a dependecy for the main script files.
+
+In short the script reads the historical data of daily stock returns to produce the Markowitz and CVaR efficient frontier, chooses the minimum variance portfolio 
+to decide asset allocation within the portfolio (with monthly rebalancing) and then performs backtesting with real stock data to measure portfolio performance. 
+The main performance metric used is the Sharpe ratio.
+
+The markowitz efficient frontier is easy to generate, however the CVaR efficient frontier has no closed form solution and requires optimization to find the optimal asset weights.
+
+
+The script is dynamic in the sense that the backtesting period can be modified easily (change 1 line of code).
+
+
+
+
+
+
