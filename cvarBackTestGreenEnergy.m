@@ -1,3 +1,9 @@
+    
+****ACKNOWLEDGMENTS****
+   A large chunk of the code used (~50%) is written by Professor Alexey Rubtsov and the original code can be found here https://sites.google.com/site/alexeyvrubtsov/quantitative-finance-materials within the "Portfolio Optimization" zip file. I could not have finished this project without his guidance.
+
+
+
 %% Attempt to read data from stockData.xlsx and create dynamic backtesting
 %script that allows you to change the start date and the length of the
 %backtesting. The script will record portfolio value and rebalance
